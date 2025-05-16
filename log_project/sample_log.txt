@@ -1,0 +1,4 @@
+[2025-05-15 14:23] INFO - User login successful
+[2025-05-15 14:24] ERROR - Failed login attempt
+[2025-05-15 14:25] WARNING - Connection timeout
+[2025-05-15 14:27] UNAUTHORIZED - Access denied to /admin
