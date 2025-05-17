@@ -1,29 +1,29 @@
 # Network Tools Project
 
-مشروع بسيط باستخدام لغة بايثون لتحليل الشبكة، ويتضمن الأدوات التالية:
+A simple Python project for basic network analysis using two custom tools.
 
-## 1. `network_sniffer.py`
-أداة تقوم بالتقاط وتحليل الحزم (Packets) باستخدام مكتبة Scapy، وتعرض ملخصًا للحزم التي تمر عبر واجهة الشبكة.
+## Contents
 
-### الوظائف:
-- التقاط عدد محدد من الحزم.
-- طباعة معلومات كل حزمة.
-- حفظ النتائج في ملف نصي.
+1. **`network_sniffer.py`**  
+   A packet sniffer built using the Scapy library, designed to capture and display network packets.
 
-## 2. `port_scanner.py`
-أداة لفحص المنافذ المفتوحة على عنوان IP معين باستخدام مكتبة socket.
+   ### Features:
+   - Captures a fixed number of packets.
+   - Prints a summary of each packet.
+   - Saves the captured data to a text file (`network_log.txt`).
 
-### الوظائف:
-- إدخال اسم نطاق أو عنوان IP.
-- فحص مجموعة محددة من المنافذ.
-- طباعة المنافذ المفتوحة.
+2. **`port_scanner.py`**  
+   A simple tool to scan for open ports on a target IP address using the socket library.
 
----
+   ### Features:
+   - Accepts a domain or IP address as input.
+   - Checks predefined common ports (e.g., 21, 22, 23, 80, 443).
+   - Prints which ports are open.
 
-## طريقة التشغيل
+## How to Run
 
-شغّل السكربت باستخدام بايثون:
+Make sure Python is installed on your system.
 
+### Run Packet Sniffer:
 ```bash
 python network_sniffer.py
-python port_scanner.py
